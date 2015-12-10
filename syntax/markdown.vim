@@ -96,13 +96,13 @@ syn region htmlH6       start="^\s*######"              end="\($\|#\+\)" contain
 syn match  htmlH1       /^.\+\n=\+$/ contains=@Spell
 syn match  htmlH2       /^.\+\n-\+$/ contains=@Spell
 
-if get(g:, 'vim_markdown_math', 0)
+if get(g:, 'vim_markdown_math', 1)
   syn region mkdMath matchgroup=mkdDelimiter start="\\\@<!\$" end="\$"
   syn region mkdMath matchgroup=mkdDelimiter start="\\\@<!\$\$" end="\$\$"
 endif
 
 " YAML frontmatter
-if get(g:, 'vim_markdown_frontmatter', 0)
+if get(g:, 'vim_markdown_frontmatter', 1)
   syn include @yamlTop syntax/yaml.vim
   syn region Comment matchgroup=mkdDelimiter start="\%^---$" end="^---$" contains=@yamlTop
 endif
