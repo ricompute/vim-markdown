@@ -82,7 +82,7 @@ You can also map them by yourself with `<Plug>` mappings.
 
 ### Syntax extensions
 
-The following options control which syntax extensions will be turned on. ~~They are off by default.~~ They are turned on by default. [RCL]
+The following options control which syntax extensions will be turned on. ~~They are off by default.~~ They are turned on by default. [--ricompute](https://github.com/ricompute)
 
 #### LaTeX math
 
